@@ -21,7 +21,7 @@ const Login = () => {
         password: password
       }
 
-      const response = await axios.post('http://localhost:3001/user/login', body);
+      const response = await axios.post(`${process.env.SERVER_URL}/user/login`, body);
 
      if(response.status === 200){
       cookie.set('jwt_token', response.data.token);

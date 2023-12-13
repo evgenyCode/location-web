@@ -41,7 +41,7 @@ const AddLocation = () => {
         authorization: cookie.get('jwt_token'),
       };
 
-      const response = await axios.post('http://localhost:3001/locations', body, { headers });
+      const response = await axios.post(`${process.env.SERVER_URL}/locations`, body, { headers });
 
       setLoading(false);
 

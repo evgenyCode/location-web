@@ -10,7 +10,7 @@ const index = () => {
   const [locations, setLocations] = useState<Array<any> | null>(null);
 
   const fetchLocations = async ()=>{
-    const locations = await axios.get("http://localhost:3001/locations/");
+    const locations = await axios.get(`${process.env.SERVER_URL}/locations`);
     console.log(locations.data.locations);
     
     setLocations(locations.data.locations)

@@ -10,7 +10,7 @@ type ButtonType = {
   onClick: ()=> void;
     isLoading: boolean;
     text: string;
-    className: string;
+    className?: string;
     
 
 }

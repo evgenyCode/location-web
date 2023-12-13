@@ -23,7 +23,7 @@ const Location = () => {
 
   const fetchLocation = async (id: string) => {
     try {
-      const response = await axios.get(`http://localhost:3001/locations/${id}`);
+      const response = await axios.get(`${process.env.SERVER_URL}/locations/${id}`);
       setLocation(response.data.location);
     } catch (error) {
       console.error('Error fetching location:', error);
@@ -41,7 +41,7 @@ const Location = () => {
       };
 
       if (location) {
-        await axios.delete(`http://localhost:3001/locations/${location._id}`, { headers });
+        await axios.delete(`${process.env.SERVER_URL}/locations/${location._id}`, { headers });
         router.push('/');
         // Po sėkmingo ištrinimo galite nukreipti vartotoją į kitą puslapį, pvz.: router.push('/kitaspuslapis');
       }
