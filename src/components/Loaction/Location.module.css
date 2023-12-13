@@ -1,0 +1,59 @@
+.wrapper{
+    padding: 0.5rem;
+    border: 1px rgba(215, 184, 245, 0.75) solid;
+    margin: auto;
+    border-radius: 1.5rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0px 1px 19px 1px rgba(60,42,77,0.75);
+    cursor: pointer;
+    transition: 0.3s;
+  
+}
+
+.wrapper:hover{
+    scale: 1.03;
+
+}
+
+
+.photo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.cardTextContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: auto;
+}
+
+.cardTextContent h2  {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.cardTextContent h3  {
+    margin: 0;
+    
+}
+
+.cardTextContent p  {
+    margin: 0;
+}
+
+.span
+{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(53, 52, 52);
+}

@@ -1,0 +1,28 @@
+.wrapper{
+    height: 100px;
+    background-color: #574f7d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+
+.logo img {
+    height: 90px;
+    
+    
+
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
